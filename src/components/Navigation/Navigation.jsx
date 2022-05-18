@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { Button } from '../Button';
 import formatLocationString from '../../helpers/formatLocation';
 
-import { Container, Title, FilterWrapper, HeaderNav } from './Navigation.style';
+import { Container, Title, HeaderNav } from './Navigation.style';
 
 export const Navigation = () => {
   const { pathname } = useLocation();
@@ -16,7 +16,6 @@ export const Navigation = () => {
 
         <Button>Create New</Button>
       </HeaderNav>
-      <FilterWrapper>All</FilterWrapper>
     </Container>
   );
 };
