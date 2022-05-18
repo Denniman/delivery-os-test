@@ -21,13 +21,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
+
+a {
+      text-decoration: none;
+  }
+
+  ul {
+      list-style: none;
+  }
 
 @font-face {
   font-family: "Gilroy";
   src: url("/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.otf") format("opentype");
     font-weight: 500;
   }
+
+ 
 `;
 
 export default GlobalStyle;
