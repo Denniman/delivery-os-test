@@ -54,3 +54,30 @@ export const SecondNavWrapper = styled.div`
   padding-top: 1rem;
   border-top: 1px solid #81868c;
 `;
+
+export const BottomWrapper = styled.div`
+  flex: 1;
+  /* max-height: 15rem; */
+  display: flex;
+  padding: 2.5rem 3rem;
+  color: #81868c;
+  font-size: 1rem;
+  align-items: center;
+  background-color: #f2f4f7;
+
+  .text--wrapper {
+    gap: 0.4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ml {
+    margin-left: 1.5rem;
+  }
+
+  .bottom--header {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+`;
