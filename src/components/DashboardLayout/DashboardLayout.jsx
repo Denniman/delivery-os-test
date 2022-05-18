@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import { Sidebar } from '../Sidebar';
 import { Navigation } from '../Navigation';
 
@@ -14,7 +15,9 @@ export const DashboardLayout = () => {
       <Sidebar />
       <DashboardContentWrapper>
         <Navigation />
-        <DashboardContent></DashboardContent>
+        <DashboardContent>
+          <Outlet />
+        </DashboardContent>
       </DashboardContentWrapper>
     </DashboardContainer>
   );
