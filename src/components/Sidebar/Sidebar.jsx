@@ -3,9 +3,16 @@ import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { Icon } from '../Icons';
 
-import { Container, Title, LogoWrapper, LinkWrapper, SecondNavWrapper } from './Sidebar.style';
+import {
+  Container,
+  Title,
+  LogoWrapper,
+  LinkWrapper,
+  BottomWrapper,
+  SecondNavWrapper,
+} from './Sidebar.style';
 
-export const Sidebar = ({ firstRoutes, secondRoute, thirdRoutes }) => {
+export const Sidebar = ({ routes, secondRoute, thirdRoutes }) => {
   const { pathname } = useLocation();
   return (
     <Container>
@@ -17,7 +24,7 @@ export const Sidebar = ({ firstRoutes, secondRoute, thirdRoutes }) => {
       </LogoWrapper>
 
       <LinkWrapper>
-        {firstRoutes.map(({ icon, path, title, isActive }) => (
+        {routes.slice(0, 5).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
             <span
               className={`${
@@ -31,7 +38,7 @@ export const Sidebar = ({ firstRoutes, secondRoute, thirdRoutes }) => {
         ))}
       </LinkWrapper>
       <SecondNavWrapper>
-        {secondRoute.map(({ icon, path, title, isActive }) => (
+        {routes.slice(5, 10).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
             <span
               className={`${
@@ -45,7 +52,7 @@ export const Sidebar = ({ firstRoutes, secondRoute, thirdRoutes }) => {
         ))}
       </SecondNavWrapper>
       <div>
-        {thirdRoutes.map(({ icon, path, title, isActive }) => (
+        {routes.slice(10).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
             <span
               className={`${
@@ -58,12 +65,24 @@ export const Sidebar = ({ firstRoutes, secondRoute, thirdRoutes }) => {
           </NavLink>
         ))}
       </div>
+      <BottomWrapper>
+        <div>
+          <Icon name="Uk-logo" />
+        </div>
+        <div className="text--wrapper ml">
+          <p className="bottom--header ">Mati Industries</p>
+          <p>Lanremati@gmail.com</p>
+        </div>
+        <div className="ml">
+          <Icon name="chevron" />
+        </div>
+      </BottomWrapper>
     </Container>
   );
 };
 
 Sidebar.defaultProps = {
-  firstRoutes: [
+  routes: [
     {
       icon: 'vector',
       title: 'Dashboard',
@@ -94,9 +113,6 @@ Sidebar.defaultProps = {
       path: 'trade',
       isActive: `/trade`,
     },
-  ],
-
-  secondRoute: [
     {
       icon: 'card',
       title: 'Billings',
@@ -127,8 +143,6 @@ Sidebar.defaultProps = {
       path: 'reports',
       isActive: `/reports`,
     },
-  ],
-  thirdRoutes: [
     {
       icon: 'notification',
       title: 'Notifications',

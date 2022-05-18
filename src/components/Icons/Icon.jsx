@@ -2,15 +2,20 @@ import Tag from './assets/tag';
 import User from './assets/user';
 import Card from './assets/card';
 import Send from './assets/send';
+import UkLogo from './assets/uklogo';
 import Folder from './assets/folder';
+import Bigship from './assets/bigship';
 import Wallet from './assets/wallet';
 import Quotes from './assets/quotes';
 import Vector from './assets/vector';
+import Chevron from './assets/chevron';
 import Support from './assets/support';
 import Balance from './assets/balance';
 import Settings from './assets/settings';
 import Shipment from './assets/shipment';
 import Bookings from './assets/bookings';
+import Vectorup from './assets/vectorup';
+import VectorDown from './assets/vectordown';
 import ArrowRight from './assets/arrowRight';
 import Notification from './assets/notification';
 
@@ -25,8 +30,23 @@ export const Icon = ({ name, ...props }) => {
     case 'tag': {
       return <Tag {...props} />;
     }
+    case 'bigship': {
+      return <Bigship {...props} />;
+    }
+    case 'vector-down': {
+      return <VectorDown {...props} />;
+    }
+    case 'vector-up': {
+      return <Vectorup {...props} />;
+    }
+    case 'Uk-logo': {
+      return <UkLogo {...props} />;
+    }
     case 'user': {
       return <User {...props} />;
+    }
+    case 'chevron': {
+      return <Chevron {...props} />;
     }
     case 'folder': {
       return <Folder {...props} />;
