@@ -37,6 +37,11 @@ a {
   src: url("/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.otf") format("opentype");
     font-weight: 500;
   }
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("/assets/fonts/Radomir Tinkov - Gilroy-Light.otf") format("opentype");
+    font-weight: 400;
+  }
 
  
 `;

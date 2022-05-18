@@ -1,0 +1,58 @@
+const appData = [
+  {
+    id: '1',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Pending',
+  },
+  {
+    id: '2',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Ready',
+  },
+  {
+    id: '3',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Booked',
+  },
+  {
+    id: '4',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Booked',
+  },
+  {
+    id: '5',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Booked',
+  },
+  {
+    id: '6',
+    departure: 'Xiamen, China',
+    depatureDate: 'Ready: 24th Feb, 2021',
+    destination: 'Lagos, Nigeria',
+    expiryDate: 'Expires: 17th Feb, 2021',
+    amount: '₦ 14,900,000',
+    status: 'Booked',
+  },
+];
+
+export default appData;
