@@ -6,12 +6,13 @@ export const Container = styled.nav`
   display: flex;
   flex-direction: column;
   background-color: #f9fafc;
+  border: 1px solid #e4e6ea;
   justify-content: space-between;
 
   .link {
     font-weight: 400;
     font-size: 1.4rem;
-    font-family: Inter;
+    font-family: 'Inter';
     &__path {
       gap: 1.6rem;
       display: flex;
@@ -82,7 +83,7 @@ export const BottomWrapper = styled.div`
   .bottom--header {
     color: #303030;
     font-weight: 500;
-    font-family: Inter;
     font-size: 1.2rem;
+    font-family: 'Inter';
   }
 `;
