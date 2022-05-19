@@ -1,24 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, Fragment } from 'react';
 
+import AppData from '../../../../mock';
 import { DataList } from '../../../../components/DataList';
-import AppData from '../../../../data';
-
-import { Container } from './Ready.style';
+import { Skeleton } from '../../../../components/Skeleton';
 
 export const Ready = () => {
   const [data, setData] = useState([]);
+  const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => {
+      setIsloading(false);
       setData(AppData);
     }, 2000);
   }, [data]);
 
   return (
-    <Container>
+    <Fragment>
+      {isLoading && <Skeleton length={1} />}
       {data.slice(1, 2).map((item) => (
         <DataList {...item} key={item.id} />
       ))}
-    </Container>
+    </Fragment>
   );
 };
