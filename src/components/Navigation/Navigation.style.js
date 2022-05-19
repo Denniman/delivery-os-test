@@ -8,14 +8,14 @@ export const Container = styled.header`
 
 export const HeaderNav = styled.div`
   display: flex;
+  padding: 0 3.5rem;
   align-items: center;
   margin-bottom: 2.5rem;
-  padding: 0 3.5rem;
   justify-content: space-between;
 `;
 
 export const Title = styled.p`
   color: #303030;
   font-size: 2.4rem;
-  font-family: 'Gilroy';
+  font-family: Gilroy-ExtraBold;
 `;

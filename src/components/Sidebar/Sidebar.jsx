@@ -4,8 +4,9 @@ import { useLocation } from 'react-router-dom';
 import { Icon } from '../Icons';
 
 import {
-  Container,
   Title,
+  Divider,
+  Container,
   LogoWrapper,
   LinkWrapper,
   BottomWrapper,
@@ -16,14 +17,14 @@ export const Sidebar = ({ routes, secondRoute, thirdRoutes }) => {
   const { pathname } = useLocation();
   return (
     <Container>
-      <LogoWrapper>
-        <div>
-          <Icon name="send" />
-        </div>
-        <Title>FREIGHT</Title>
-      </LogoWrapper>
-
       <LinkWrapper>
+        <LogoWrapper>
+          <div>
+            <Icon name="send" />
+          </div>
+          <Title>FREIGHT</Title>
+        </LogoWrapper>
+
         {routes.slice(0, 5).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
             <span
@@ -37,6 +38,7 @@ export const Sidebar = ({ routes, secondRoute, thirdRoutes }) => {
           </NavLink>
         ))}
       </LinkWrapper>
+      <Divider />
       <SecondNavWrapper>
         {routes.slice(5, 10).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
@@ -86,7 +88,7 @@ Sidebar.defaultProps = {
     {
       icon: 'vector',
       title: 'Dashboard',
-      path: 'dashboard',
+      path: 'quotes',
       isActive: `/dashboard`,
     },
     {
@@ -98,67 +100,67 @@ Sidebar.defaultProps = {
     {
       icon: 'booking',
       title: 'Bookings',
-      path: 'bookings',
+      path: 'quotes',
       isActive: `/bookings`,
     },
     {
       icon: 'shipment',
       title: 'Shipments',
-      path: 'shipment',
+      path: 'quotes',
       isActive: `/shipment`,
     },
     {
       icon: 'wallet',
       title: 'Trade Finance',
-      path: 'trade',
+      path: 'quotes',
       isActive: `/trade`,
     },
     {
       icon: 'card',
       title: 'Billings',
-      path: 'billings',
+      path: 'quotes',
       isActive: `/billings`,
     },
     {
       icon: 'tag',
       title: 'Products',
-      path: 'products',
+      path: 'quotes',
       isActive: `/products`,
     },
     {
       icon: 'balance',
       title: 'Fixed Rates',
-      path: 'rates',
+      path: 'quotes',
       isActive: `/rates`,
     },
     {
       icon: 'user',
       title: 'Network',
-      path: 'network',
+      path: 'quotes',
       isActive: `/network`,
     },
     {
       icon: 'folder',
       title: 'Reports',
-      path: 'reports',
+      path: 'quotes',
       isActive: `/reports`,
     },
     {
       icon: 'notification',
       title: 'Notifications',
-      path: 'notifications',
+      path: 'quotes',
       isActive: `/notifications`,
     },
     {
       icon: 'settings',
       title: 'Settings',
-      path: 'settings',
+      path: 'quotes',
       isActive: `/settings`,
     },
     {
       icon: 'support',
       title: 'Support',
-      path: 'support',
+      path: 'quotes',
       isActive: `/support`,
     },
   ],

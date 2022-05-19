@@ -1,7 +1,6 @@
 import React from 'react';
-
-import { Container } from './Dashboard.style';
+import { DashboardLayout } from '../../components/DashboardLayout/DashboardLayout';
 
 export const Dashboard = () => {
-  return <Container></Container>;
+  return <DashboardLayout />;
 };

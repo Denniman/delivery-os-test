@@ -21,7 +21,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 a {
@@ -32,15 +31,22 @@ a {
       list-style: none;
   }
 
-@font-face {
-  font-family: "Gilroy";
-  src: url("/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.otf") format("opentype");
-    font-weight: 500;
-  }
-@font-face {
-  font-family: "Gilroy-Light";
-  src: url("/assets/fonts/Radomir Tinkov - Gilroy-Light.otf") format("opentype");
+
+  @font-face {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
     font-weight: 400;
+    font-display: swap;
+    src: local('Gilroy-Light'),
+        url('/assets/fonts/Radomir Tinkov - Gilroy-Light.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Gilroy-ExtraBold';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local('Gilroy-ExtraBold'),
+        url("/assets/fonts/Radomir Tinkov - Gilroy-ExtraBold.otf") format('opentype');
   }
 
  

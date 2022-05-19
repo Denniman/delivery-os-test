@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   width: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   padding: 1.7rem 3.4rem;
@@ -13,7 +12,7 @@ export const ShipHeader = styled.p`
   color: #0747a6;
   font-weight: 600;
   font-size: 1.6rem;
-  font-family: 'Gilroy';
+  font-family: Gilroy-ExtraBold;
 `;
 
 export const HeadingPrimary = styled(ShipHeader)`
@@ -77,13 +76,11 @@ export const ImportWrapper = styled.div`
   padding: 0.4rem 1.5rem;
   border-radius: 1.5rem;
   border: 2px solid #e5e5e5;
-  font-family: 'Gilroy-Light';
+  font-family: Gilroy-Light;
 `;
 
-export const StatusText = styled.p`
+export const StatusText = styled(ShipHeader)`
   font-size: 1.4rem;
-  font-family: 'Gilroy';
-  font-weight: 700;
 
   color: ${({ status }) => {
     switch (status) {

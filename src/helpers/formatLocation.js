@@ -7,6 +7,7 @@
  */
 
 const formatLocationString = (location) => {
+  if (!location) return;
   const words = location.substring(1).split(' ');
 
   for (let i = 0; i < words.length; i++) {

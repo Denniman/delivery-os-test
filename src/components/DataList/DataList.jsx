@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon } from '../Icons';
-import Skeleton from 'react-loading-skeleton';
 
 import {
   Amount,
@@ -28,8 +27,8 @@ export const DataList = ({ departure, status, destination, amount, expiryDate, d
         </ImportWrapper>
       </ListItem>
       <ListItem marginLeft={6}>
-        <HeadingPrimary>{departure || <Skeleton />}</HeadingPrimary>
-        <HeadingSecondary>{depatureDate || <Skeleton />}</HeadingSecondary>
+        <HeadingPrimary>{departure}</HeadingPrimary>
+        <HeadingSecondary>{depatureDate}</HeadingSecondary>
       </ListItem>
 
       <ListItem marginLeft={6}>
@@ -37,14 +36,14 @@ export const DataList = ({ departure, status, destination, amount, expiryDate, d
       </ListItem>
 
       <ListItem marginLeft={6}>
-        <HeadingPrimary>{destination || <Skeleton />}</HeadingPrimary>
-        <HeadingSecondary>{expiryDate || <Skeleton />}</HeadingSecondary>
+        <HeadingPrimary>{destination}</HeadingPrimary>
+        <HeadingSecondary>{expiryDate}</HeadingSecondary>
       </ListItem>
       <ListItem marginLeft={6}>
-        <Amount>{amount || <Skeleton />}</Amount>
+        <Amount>{amount}</Amount>
       </ListItem>
       <ListItem marginLeft={6}>
-        <StatusText status={status}>{status || <Skeleton />}</StatusText>
+        <StatusText status={status}>{status}</StatusText>
       </ListItem>
     </Container>
   );
