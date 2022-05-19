@@ -1,6 +1,6 @@
 import React from 'react';
-import { DashboardLayout } from '../../components/DashboardLayout/DashboardLayout';
+import { Layout } from '../../components/Layout';
 
 export const Dashboard = () => {
-  return <DashboardLayout />;
+  return <Layout />;
 };

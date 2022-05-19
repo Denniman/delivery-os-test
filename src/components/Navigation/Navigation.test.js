@@ -1,13 +1,8 @@
-import { render, fireEvent, screen } from '@testing-library/react';
-import { Button } from '../Button';
+import { render, screen } from '@testing-library/react';
+import { Navigation } from './Navigation';
 
-test('loads items eventually', async () => {
-  render(<Button />);
+it('renders navbar title text', () => {
+  render(<Navigation />);
 
-  // Click button
-  fireEvent.click(screen.getByText('Create New'));
-
-  // Wait for page to update with query text
-  const items = await screen.findAllByText(/Item #[0-9]: /);
-  expect(items).toHaveLength(10);
+  expect(screen.getByText('Quotes')).toBeInTheDocument();
 });

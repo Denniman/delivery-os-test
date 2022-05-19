@@ -3,13 +3,9 @@ import { Outlet } from 'react-router-dom';
 import { Sidebar } from '../Sidebar';
 import { Navigation } from '../Navigation';
 
-import {
-  DashboardContainer,
-  DashboardContentWrapper,
-  DashboardContent,
-} from './DashboardLayout.style';
+import { DashboardContainer, DashboardContentWrapper, DashboardContent } from './Layout.style';
 
-export const DashboardLayout = () => {
+export const Layout = () => {
   return (
     <DashboardContainer>
       <Sidebar />

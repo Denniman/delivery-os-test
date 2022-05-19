@@ -13,7 +13,7 @@ import {
   SecondNavWrapper,
 } from './Sidebar.style';
 
-export const Sidebar = ({ routes, secondRoute, thirdRoutes }) => {
+export const Sidebar = ({ routes }) => {
   const { pathname } = useLocation();
   return (
     <Container>
