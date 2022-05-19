@@ -35,9 +35,8 @@ export const Container = styled.nav`
 
 export const Title = styled.p`
   color: #0746a6;
-  font-weight: 700;
   font-size: 1.361rem;
-  font-family: Gilroy-Light;
+  font-family: 'Gilroy-ExtraBold';
 `;
 
 export const LogoWrapper = styled.div`
