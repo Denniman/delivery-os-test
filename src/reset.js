@@ -14,7 +14,6 @@ const GlobalStyle = createGlobalStyle`
     }
 
 body {
-
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

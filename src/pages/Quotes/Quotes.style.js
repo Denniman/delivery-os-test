@@ -20,11 +20,20 @@ export const FilterButton = styled.div`
   cursor: pointer;
   align-items: center;
   font-family: 'Inter';
+  position: relative;
   padding-bottom: 0.8rem;
-  border-bottom-left-radius: 2.5px;
-  border-bottom-right-radius: 2.5px;
   color: ${({ isActive }) => (isActive ? '#0746a6' : '#81868c')};
-  border-bottom: ${({ isActive }) => (isActive ? '3px solid #0746a6' : null)};
+
+  &::after {
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    border-top-left-radius: 0.9rem;
+    border-top-right-radius: 0.9rem;
+    background-color: ${({ isActive }) => (isActive ? '#0746a6' : null)};
+  }
 
   .filter {
     &__count {
