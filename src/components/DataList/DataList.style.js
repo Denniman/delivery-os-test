@@ -19,34 +19,33 @@ export const HeadingPrimary = styled(ShipHeader)`
   color: #303030;
 `;
 
-export const Amount = styled.p`
-  color: #303030;
-  font-family: Inter;
-  font-size: 1.6rem;
-  font-weight: 600;
-`;
-
 export const HeadingSecondary = styled.p`
   color: #81868c;
-  font-size: 1.4rem;
-  font-family: Inter;
   font-weight: 400;
+  font-size: 1.4rem;
+  font-family: 'Inter';
+`;
+
+export const Amount = styled(HeadingSecondary)`
+  color: #303030;
+  font-weight: 600;
+  font-size: 1.6rem;
 `;
 
 export const ShirtText = styled(HeadingSecondary)`
   color: #333333;
+  font-weight: 400;
   position: relative;
   margin-left: 2.4rem;
-  font-weight: 400;
 
   &::before {
     content: '';
     top: 40%;
     left: -10px;
-    border-radius: 50%;
-    position: absolute;
     width: 0.5rem;
     aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
     background-color: #303030;
   }
 `;
@@ -69,14 +68,15 @@ export const ListItem = styled.div`
 export const ImportWrapper = styled.div`
   display: flex;
   width: 7rem;
+  color: #81868c;
   font-size: 1rem;
   font-weight: 500;
   align-items: center;
-  justify-content: center;
   padding: 0.4rem 1.5rem;
   border-radius: 1.5rem;
-  border: 2px solid #e5e5e5;
-  font-family: Gilroy-Light;
+  justify-content: center;
+  font-family: 'Gilroy-Light';
+  border: 1.7px solid #e5e5e5;
 `;
 
 export const StatusText = styled(ShipHeader)`

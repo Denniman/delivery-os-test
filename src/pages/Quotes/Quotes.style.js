@@ -5,13 +5,13 @@ export const Container = styled.div`
 `;
 
 export const FilterHeader = styled.div`
+  gap: 3.2rem;
   width: 100%;
   display: flex;
-  gap: 3.2rem;
-  padding: 0 3.4rem;
-  font-family: Inter;
   font-size: 1.4rem;
   align-items: center;
+  padding: 0.7rem 3.4rem;
+  font-family: 'Inter';
   border-bottom: 2px solid #e4e6ea;
 `;
 
@@ -26,12 +26,12 @@ export const FilterButton = styled.div`
 
   &::after {
     content: '';
-    bottom: 0;
     width: 100%;
     height: 3px;
+    bottom: -8px;
     position: absolute;
-    border-top-left-radius: 0.9rem;
-    border-top-right-radius: 0.9rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     background-color: ${({ isActive }) => (isActive ? '#0746a6' : null)};
   }
 
