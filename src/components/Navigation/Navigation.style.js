@@ -16,6 +16,7 @@ export const HeaderNav = styled.div`
 
 export const Title = styled.h1`
   color: #303030;
+  font-weight: 700;
   font-size: 2.4rem;
-  font-family: Gilroy-ExtraBold;
+  font-family: Gilroy-Light;
 `;

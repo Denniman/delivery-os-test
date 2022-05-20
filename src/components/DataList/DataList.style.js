@@ -8,11 +8,11 @@ export const Container = styled.div`
   border-bottom: 2px solid #f5f5f5;
 `;
 
-export const ShipHeader = styled.p`
+export const ShipHeader = styled.h2`
   color: #0747a6;
   font-weight: 600;
   font-size: 1.6rem;
-  font-family: Gilroy-ExtraBold;
+  font-family: Gilroy-Light;
 `;
 
 export const HeadingPrimary = styled(ShipHeader)`
@@ -29,7 +29,7 @@ export const HeadingSecondary = styled.p`
 export const Amount = styled(HeadingSecondary)`
   color: #303030;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-family: 'Inter';
 `;
 
 export const ShirtText = styled(HeadingSecondary)`
