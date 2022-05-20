@@ -14,7 +14,7 @@ export const HeaderNav = styled.div`
   justify-content: space-between;
 `;
 
-export const Title = styled.p`
+export const Title = styled.h1`
   color: #303030;
   font-size: 2.4rem;
   font-family: Gilroy-ExtraBold;

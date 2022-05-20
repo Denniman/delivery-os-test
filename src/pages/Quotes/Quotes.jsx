@@ -22,19 +22,19 @@ export const Quotes = () => {
     <Container>
       <FilterHeader>
         <FilterButton isActive={tab === 'All'} onClick={() => setTab('All')}>
-          All <p className="filter__count">42</p>
+          All <p className="filter__count">6</p>
         </FilterButton>
 
         <FilterButton isActive={tab === 'Pending'} onClick={() => setTab('Pending')}>
-          Pending <span className="filter__count">31</span>
+          Pending <span className="filter__count">1</span>
         </FilterButton>
 
         <FilterButton isActive={tab === 'Ready'} onClick={() => setTab('Ready')}>
-          Ready <p className="filter__count">42</p>
+          Ready <p className="filter__count">1</p>
         </FilterButton>
 
         <FilterButton isActive={tab === 'Booked'} onClick={() => setTab('Booked')}>
-          Booked <p className="filter__count">0</p>
+          Booked <p className="filter__count">4</p>
         </FilterButton>
       </FilterHeader>
 

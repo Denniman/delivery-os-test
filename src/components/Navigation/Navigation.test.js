@@ -1,8 +1,16 @@
 import { render, screen } from '@testing-library/react';
 import { Navigation } from './Navigation';
 
-it('renders navbar title text', () => {
-  render(<Navigation />);
+describe('<Navigation /> spec', () => {
+  it('renders correct title text', () => {
+    render(<Navigation />);
 
-  expect(screen.getByText('Quotes')).toBeInTheDocument();
+    expect(screen.getByRole('heading')).toHaveTextContent('Quotes');
+  });
+
+  it('renders correct Button text', () => {
+    render(<Navigation />);
+
+    expect(screen.getByRole('button')).toHaveTextContent('Create New');
+  });
 });
