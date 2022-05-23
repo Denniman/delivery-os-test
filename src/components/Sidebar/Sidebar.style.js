@@ -63,20 +63,19 @@ export const Divider = styled.div`
 
 export const BottomWrapper = styled.div`
   display: flex;
+  gap: 1.6rem;
   color: #81868c;
   font-size: 1rem;
   padding: 2rem 3rem;
   align-items: center;
+  padding: 1.2vh 1.663rem;
   background-color: #f2f4f7;
+  border-right: 1px solid #e4e6ea;
 
   .text--wrapper {
     gap: 0.4rem;
     display: flex;
     flex-direction: column;
-  }
-
-  .ml {
-    margin-left: 1.5rem;
   }
 
   .bottom--header {

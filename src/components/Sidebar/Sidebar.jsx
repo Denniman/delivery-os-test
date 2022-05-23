@@ -69,13 +69,11 @@ export const Sidebar = ({ routes }) => {
         <div>
           <Icon name="Uk-logo" />
         </div>
-        <div className="text--wrapper ml">
+        <div className="text--wrapper">
           <p className="bottom--header ">Mati Industries</p>
           <p>Lanremati@gmail.com</p>
         </div>
-        <div className="ml">
-          <Icon name="chevron" />
-        </div>
+        <Icon name="chevron" />
       </BottomWrapper>
     </Container>
   );
