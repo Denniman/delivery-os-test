@@ -83,7 +83,7 @@ export const PaginationNumberWrapper = styled.div`
 export const PaginationInput = styled.input.attrs({
   type: 'number',
 })`
-  width: 6rem;
+  max-width: 7rem;
   max-height: 3.5rem;
   border-radius: 8px;
   padding: 1rem 1.5rem;

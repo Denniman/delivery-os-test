@@ -28,11 +28,9 @@ export const Sidebar = ({ routes }) => {
         {routes.slice(0, 5).map(({ icon, path, title, isActive }) => (
           <NavLink to={path} className="link" key={title}>
             <span
-              className={`${
-                pathname === isActive ? 'link__active' : 'link__unselected'
-              } link__path`}
+              className={`${path === isActive ? 'link__active' : 'link__unselected'} link__path`}
             >
-              <Icon name={icon} color={pathname === isActive ? '#0746A6' : null} />
+              <Icon name={icon} color={path === isActive ? '#0746A6' : null} />
               {title}
             </span>
           </NavLink>
@@ -94,8 +92,8 @@ Sidebar.defaultProps = {
     {
       icon: 'quotes',
       title: 'Quotes',
-      path: 'quotes',
-      isActive: `/quotes`,
+      path: '/',
+      isActive: `/`,
     },
     {
       icon: 'booking',
