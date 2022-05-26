@@ -9,16 +9,23 @@ export const Booked = () => {
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const bookedTimer = setTimeout(() => {
       setIsloading(false);
-      setData(AppData);
+      setData(bookedData);
     }, 2000);
-  }, [data]);
+
+    return () => {
+      clearTimeout(bookedTimer);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const bookedData = AppData.filter(({ status }) => status === 'Booked');
 
   return (
     <Fragment>
-      {isLoading && <Skeleton length={4} />}
-      {data.slice(2).map((item) => (
+      {isLoading && <Skeleton length={bookedData.length} />}
+      {data.map((item) => (
         <DataList {...item} key={item.id} />
       ))}
     </Fragment>

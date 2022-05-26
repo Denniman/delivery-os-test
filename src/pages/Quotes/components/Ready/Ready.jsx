@@ -9,16 +9,23 @@ export const Ready = () => {
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const pendingTimer = setTimeout(() => {
       setIsloading(false);
-      setData(AppData);
+      setData(readyData);
     }, 2000);
-  }, [data]);
+
+    return () => {
+      clearTimeout(pendingTimer);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const readyData = AppData.filter(({ status }) => status === 'Ready');
 
   return (
     <Fragment>
-      {isLoading && <Skeleton length={1} />}
-      {data.slice(1, 2).map((item) => (
+      {isLoading && <Skeleton length={readyData.length} />}
+      {data.map((item) => (
         <DataList {...item} key={item.id} />
       ))}
     </Fragment>

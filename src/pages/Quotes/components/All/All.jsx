@@ -9,14 +9,18 @@ export const All = () => {
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
+    const allTimer = setTimeout(() => {
       setIsloading(false);
       setData(AppData);
     }, 2000);
+
+    return () => {
+      clearTimeout(allTimer);
+    };
   }, [data]);
   return (
     <Fragment>
-      {isLoading && <Skeleton length={4} />}
+      {isLoading && <Skeleton length={AppData.length} />}
       {data.map((item) => (
         <DataList {...item} key={item.id} />
       ))}
